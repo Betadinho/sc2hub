@@ -63,7 +63,7 @@
                         >
                             <v-expansion-panel-header v-ripple="{class:'primary--text'}">
                                 <template v-slot:actions>
-                                    <v-icon color="teal">$expand</v-icon>
+                                    <v-icon color="primary">$expand</v-icon>
                                 </template>    
                                 <b>Early Game</b>
                             </v-expansion-panel-header>
@@ -102,7 +102,7 @@
                         >
                             <v-expansion-panel-header v-ripple="{class:'primary--text'}">
                                 <template v-slot:actions>
-                                    <v-icon color="teal">$expand</v-icon>
+                                    <v-icon color="primary">$expand</v-icon>
                                 </template>    
                                 <b>Mid Game</b>
                             </v-expansion-panel-header>
@@ -141,7 +141,7 @@
                         >
                             <v-expansion-panel-header v-ripple="{class:'primary--text'}">
                                 <template v-slot:actions>
-                                    <v-icon color="teal">$expand</v-icon>
+                                    <v-icon color="primary">$expand</v-icon>
                                 </template>    
                                 <b>Late Game</b>
                             </v-expansion-panel-header>

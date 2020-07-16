@@ -21,7 +21,7 @@
                             <v-btn icon @click="deleteBuild(build)">
                                 <v-icon dark>mdi-delete-forever-outline</v-icon>
                             </v-btn>
-                            <v-icon color="teal">$expand</v-icon>
+                            <v-icon color="primary">$expand</v-icon>
                         </template>    
                         <b>{{ build.title }}</b>
 

@@ -11,7 +11,7 @@
             fab
             bottom
             right
-            color="teal"
+            color="primary"
             @click='createTestData'
         >
             <v-icon>mdi-plus</v-icon>
