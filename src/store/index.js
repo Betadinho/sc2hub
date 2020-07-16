@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import idb from '@/api/idb'
+import idb from '@/api/db/idb'
 
 Vue.use(Vuex)
 
