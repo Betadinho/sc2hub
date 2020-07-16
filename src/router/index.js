@@ -29,11 +29,6 @@ Vue.use(VueRouter)
     component: () => import('../views/Create.vue')
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: () => import('../views/Test.vue')
-  },
-  {
       path: '/library',
       name: 'Library',
     component: () => import('../views/Library.vue')
