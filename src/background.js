@@ -1,6 +1,8 @@
 'use strict'
 
-import { app, protocol, BrowserWindow, ipcMain, ipcRenderer } from 'electron'
+import { app, protocol, BrowserWindow} from 'electron'
+//imports required for preload script
+//import { ipcMain, ipcRenderer } from 'electron'
 import {
   createProtocol,
   /* installVueDevtools */
