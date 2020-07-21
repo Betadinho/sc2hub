@@ -1,6 +1,7 @@
 {
-  "name": "sc2builds",
+  "name": "SC2Hub",
   "version": "0.1.0",
+  "author": "alpha-prechtl@outlook.com",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
