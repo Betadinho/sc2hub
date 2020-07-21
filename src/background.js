@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, protocol, BrowserWindow} from 'electron'
+import { app, protocol, BrowserWindow, Menu} from 'electron'
 import {
   createProtocol,
   /* installVueDevtools */
@@ -21,12 +21,14 @@ let win
 protocol.registerSchemesAsPrivileged([{scheme: 'app', privileges: { secure: true, standard: true } }])
 
 function createWindow () {
+    Menu.setApplicationMenu(false)
   // Create the browser window.
-  win = new BrowserWindow({ width: 800, height: 600, webPreferences: {
+  win = new BrowserWindow({ width: 800, height: 900, webPreferences: {
     // Use pluginOptions.nodeIntegration, leave this alone
     // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
     nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
-    contextIsolation: true
+    contextIsolation: true,
+    center: true
   } })
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
