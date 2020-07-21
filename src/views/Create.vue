@@ -176,6 +176,7 @@
                 fixed
                 dark
                 fab
+                outlined
                 bottom
                 right
                 color="primary"

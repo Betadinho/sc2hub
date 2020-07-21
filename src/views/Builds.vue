@@ -7,10 +7,11 @@
         </v-container>
         <v-btn
             fixed
-            dark
-            fab
             bottom
             right
+            dark
+            outlined
+            fab
             color="primary"
             @click='createTestData'
         >
