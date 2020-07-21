@@ -1,15 +1,11 @@
 'use strict'
 
 import { app, protocol, BrowserWindow} from 'electron'
-//imports required for preload script
-//import { ipcMain, ipcRenderer } from 'electron'
 import {
   createProtocol,
   /* installVueDevtools */
 } from 'vue-cli-plugin-electron-builder/lib'
 const isDevelopment = process.env.NODE_ENV !== 'production'
-const path = require('path')
-const fs = require('fs')
 const userDataPath = app.getPath('userData')
 if(__dirname.includes("dist_electron")) {
     var basePath = (__dirname.replace("dist_electron", "") + "\src")
