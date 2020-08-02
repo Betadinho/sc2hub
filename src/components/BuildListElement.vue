@@ -13,7 +13,8 @@
                                 <v-icon dark v-else>mdi-heart-outline</v-icon>
                             </v-btn>
                             <v-btn icon @click="drawer">
-                                <v-icon dark>mdi-book</v-icon>
+                                <v-icon dark v-if="isDrawer()">mdi-book</v-icon>
+                                <v-icon dark v-else>mdi-book-outline</v-icon>
                             </v-btn>
                             <v-btn icon @click="editBuild(build)">
                                 <v-icon dark>mdi-circle-edit-outline</v-icon>
@@ -91,6 +92,14 @@ export default {
                 return false;
             } else return true;
         },
+        isDrawer() {
+            let drawer = this.$store.state.quickDrawer
+            if(drawer.findIndex(x => x.id === this.build.id) == -1) {
+                return false;
+            } else return true;
+
+        }
+        ,
         async deleteBuild(build) {
             if(confirm('Permanently delete this build?\n '+build.title)) {
                 await this.$store.dispatch('deleteBuild', build);
